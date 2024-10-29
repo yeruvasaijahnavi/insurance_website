@@ -5,6 +5,8 @@ import { HeroComponent } from "./hero/hero.component";
 import { OurfeaturesComponent } from "./ourfeatures/ourfeatures.component";
 import { AboutincepComponent } from "./aboutincep/aboutincep.component";
 import { InsuranceServicesComponent } from "./insurance-services/insurance-services.component";
+import { WhychooseusComponent } from "./whychooseus/whychooseus.component";
+import { ExpertteamComponent } from "./expertteam/expertteam.component";
 
 @Component({
 	selector: "app-root",
@@ -16,6 +18,8 @@ import { InsuranceServicesComponent } from "./insurance-services/insurance-servi
 		OurfeaturesComponent,
 		AboutincepComponent,
 		InsuranceServicesComponent,
+		WhychooseusComponent,
+		ExpertteamComponent,
 	],
 	templateUrl: "./app.component.html",
 	styleUrl: "./app.component.css",
