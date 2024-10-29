@@ -9,3 +9,7 @@
 * {
 	font-family: "Poppins", "Montserrat", sans-serif;
 }
+
+p {
+	@apply text-sm;
+}
