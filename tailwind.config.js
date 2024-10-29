@@ -5,9 +5,9 @@ module.exports = {
 		extend: {
 			colors: {
 				accent: "#138f82",
-				"accent-light": "#dff0ef", // Add your accent-light color here
+				"accent-light": "#dff0ef",
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwindcss"), require("autoprefixer")],
 };
