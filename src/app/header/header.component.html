@@ -1,0 +1,152 @@
+<nav class="bg-gray-800 p-4 shadow-lg">
+	<div class="container mx-auto flex items-center justify-between">
+		<!-- Left: Company Name -->
+		<div class="text-white text-xl font-semibold">
+			<a href="#">CompanyName</a>
+		</div>
+
+		<!-- Center: Search Bar -->
+		<div class="hidden md:flex items-center mx-4 flex-1">
+			<input
+				type="text"
+				placeholder="Search..."
+				class="px-4 py-2 w-full max-w-md rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+			/>
+		</div>
+
+		<!-- Center: Dropdown Menus -->
+		<div class="hidden md:flex space-x-4 text-white">
+			<div class="relative group">
+				<button class="hover:text-blue-400">Home</button>
+				<div
+					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
+				>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Option 1</a
+					>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Option 2</a
+					>
+				</div>
+			</div>
+
+			<div class="relative group">
+				<button class="hover:text-blue-400">Pages</button>
+				<div
+					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
+				>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>About Us</a
+					>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Services</a
+					>
+				</div>
+			</div>
+
+			<div class="relative group">
+				<button class="hover:text-blue-400">Insurance</button>
+				<div
+					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
+				>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Life</a
+					>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Health</a
+					>
+				</div>
+			</div>
+
+			<div class="relative group">
+				<button class="hover:text-blue-400">Blog</button>
+				<div
+					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
+				>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Latest</a
+					>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Popular</a
+					>
+				</div>
+			</div>
+
+			<div class="relative group">
+				<button class="hover:text-blue-400">Contact Us</button>
+				<div
+					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
+				>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Get in Touch</a
+					>
+					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+						>Support</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right: Phone Number, Get Demo Button, and Side Menu Icon -->
+		<div class="hidden md:flex items-center space-x-4">
+			<!-- Phone Number -->
+			<span class="text-white">📞 +123-456-7890</span>
+
+			<!-- Get Demo Button -->
+			<button
+				class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+			>
+				Get Demo
+			</button>
+		</div>
+
+		<!-- Side Menu Icon -->
+		<button class="md:hidden text-white">
+			<svg
+				class="w-6 h-6"
+				fill="none"
+				stroke="currentColor"
+				viewBox="0 0 24 24"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M4 6h16M4 12h16M4 18h16"
+				></path>
+			</svg>
+		</button>
+	</div>
+
+	<!-- Side Menu for Mobile -->
+	<div class="md:hidden bg-gray-700 mt-2 p-4">
+		<!-- Search Bar -->
+		<input
+			type="text"
+			placeholder="Search..."
+			class="w-full px-4 py-2 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+		/>
+
+		<!-- Dropdown Links -->
+		<a href="#" class="block text-white py-2 hover:text-blue-400">Home</a>
+		<a href="#" class="block text-white py-2 hover:text-blue-400">Pages</a>
+		<a href="#" class="block text-white py-2 hover:text-blue-400"
+			>Insurance</a
+		>
+		<a href="#" class="block text-white py-2 hover:text-blue-400">Blog</a>
+		<a href="#" class="block text-white py-2 hover:text-blue-400"
+			>Contact Us</a
+		>
+
+		<!-- Phone Number and Button -->
+		<div class="mt-4 flex flex-col items-start">
+			<span class="text-white">📞 +123-456-7890</span>
+			<button
+				class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600"
+			>
+				Get Demo
+			</button>
+		</div>
+	</div>
+</nav>
