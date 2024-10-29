@@ -7,6 +7,7 @@ import { AboutincepComponent } from "./aboutincep/aboutincep.component";
 import { InsuranceServicesComponent } from "./insurance-services/insurance-services.component";
 import { WhychooseusComponent } from "./whychooseus/whychooseus.component";
 import { ExpertteamComponent } from "./expertteam/expertteam.component";
+import { OurreviewComponent } from "./ourreview/ourreview.component";
 
 @Component({
 	selector: "app-root",
@@ -20,6 +21,7 @@ import { ExpertteamComponent } from "./expertteam/expertteam.component";
 		InsuranceServicesComponent,
 		WhychooseusComponent,
 		ExpertteamComponent,
+		OurreviewComponent,
 	],
 	templateUrl: "./app.component.html",
 	styleUrl: "./app.component.css",
