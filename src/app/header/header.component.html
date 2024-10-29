@@ -1,43 +1,27 @@
-<!-- 
-FIXME: search bar size 
-TODO: Add hamburger icon to rhs
-TODO: Add todolist dropdown chevron
--->
-
 <nav class="bg-white p-4 shadow-lg">
 	<div class="container mx-auto flex items-center justify-between">
-		<!-- Left: Company Name -->
-		<div class="text-green-500 text-xl font-semibold">
+		<div class="text-accent text-xl font-semibold">
 			<a href="#">Logo</a>
 		</div>
-
-		<!-- Center: Search Bar -->
+		<!-- search -->
 		<div class="hidden md:flex items-center mx-4 flex-1">
 			<input
 				type="text"
 				placeholder="Search here..."
-				class="px-4 py-2 w-full max-w-md rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+				class="px-4 py-2 w-full max-w-md border-b-2 focus:border-accent focus:outline-none"
 			/>
 		</div>
-
-		<!-- Center: Dropdown Menus -->
-		<div class="hidden md:flex space-x-4 text-white">
+		<!-- Dropdowns -->
+		<div class="hidden md:flex space-x-4 text-black">
 			<div class="relative group">
-				<button class="hover:text-blue-400">Home</button>
+				<button class="text-accent hover:text-accent">Home</button>
 				<div
-					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
-				>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Option 1</a
-					>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Option 2</a
-					>
-				</div>
+					class="absolute hidden bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
+				></div>
 			</div>
 
 			<div class="relative group">
-				<button class="hover:text-blue-400">Pages</button>
+				<button class="hover:text-accent">Pages</button>
 				<div
 					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 				>
@@ -51,7 +35,7 @@ TODO: Add todolist dropdown chevron
 			</div>
 
 			<div class="relative group">
-				<button class="hover:text-blue-400">Insurance</button>
+				<button class="hover:text-accent">Insurance</button>
 				<div
 					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 				>
@@ -65,7 +49,7 @@ TODO: Add todolist dropdown chevron
 			</div>
 
 			<div class="relative group">
-				<button class="hover:text-blue-400">Blog</button>
+				<button class="hover:text-accent">Blog</button>
 				<div
 					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 				>
@@ -79,7 +63,7 @@ TODO: Add todolist dropdown chevron
 			</div>
 
 			<div class="relative group">
-				<button class="hover:text-blue-400">Contact Us</button>
+				<button class="hover:text-accent">Contact Us</button>
 				<div
 					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 				>
@@ -93,20 +77,26 @@ TODO: Add todolist dropdown chevron
 			</div>
 		</div>
 
-		<!-- Right: Phone Number, Get Demo Button, and Side Menu Icon -->
 		<div class="hidden md:flex items-center space-x-4">
-			<!-- Phone Number -->
-			<span class="text-white">📞 +123-456-7890</span>
-
-			<!-- Get Demo Button -->
-			<button
-				class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+			<span class="flex items-center"
+				><img
+					src="/assets/images/icons/phone_icon.png"
+					alt="phone icon"
+				/>
+				+123-456-7890</span
 			>
+
+			<button
+				class="bg-accent flex text-white px-4 py-2 rounded hover:bg-accent"
+			>
+				<img
+					src="/assets/images/icons/quote_icon.png"
+					alt="phone icon"
+				/>
 				Get a Quote
 			</button>
 		</div>
 
-		<!-- Side Menu Icon -->
 		<button class="md:hidden text-white">
 			<svg
 				class="w-6 h-6"
@@ -123,33 +113,31 @@ TODO: Add todolist dropdown chevron
 				></path>
 			</svg>
 		</button>
-	</div>
 
-	<!-- Side Menu for Mobile -->
+		<img src="/assets/images/icons/hamburger_icon.png" alt="" />
+	</div>
+	<!-- mobile -->
 	<div class="md:hidden bg-gray-700 mt-2 p-4">
-		<!-- Search Bar -->
 		<input
 			type="text"
 			placeholder="Search..."
 			class="w-full px-4 py-2 mb-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
 		/>
 
-		<!-- Dropdown Links -->
-		<a href="#" class="block text-white py-2 hover:text-blue-400">Home</a>
-		<a href="#" class="block text-white py-2 hover:text-blue-400">Pages</a>
-		<a href="#" class="block text-white py-2 hover:text-blue-400"
+		<a href="#" class="block text-white py-2 hover:text-accent">Home</a>
+		<a href="#" class="block text-white py-2 hover:text-accent">Pages</a>
+		<a href="#" class="block text-white py-2 hover:text-accent"
 			>Insurance</a
 		>
-		<a href="#" class="block text-white py-2 hover:text-blue-400">Blog</a>
-		<a href="#" class="block text-white py-2 hover:text-blue-400"
+		<a href="#" class="block text-white py-2 hover:text-accent">Blog</a>
+		<a href="#" class="block text-white py-2 hover:text-accent"
 			>Contact Us</a
 		>
 
-		<!-- Phone Number and Button -->
 		<div class="mt-4 flex flex-col items-start">
-			<span class="text-white">📞 +123-456-7890</span>
+			<span class="text-white"> +123-456-7890</span>
 			<button
-				class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600"
+				class="bg-accent text-white px-4 py-2 mt-2 rounded hover:bg-accent"
 			>
 				Get Demo
 			</button>
