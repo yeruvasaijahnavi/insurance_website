@@ -1,78 +1,94 @@
-<nav class="bg-white p-4 shadow-lg">
+<nav class="bg-white py-4 shadow-lg text-sm">
 	<div class="container mx-auto flex items-center justify-between">
-		<div class="text-accent text-xl font-semibold">
-			<a href="#">Logo</a>
+		<div class="text-accent text-3xl font-bold">
+			<h1 href="#">Logo</h1>
 		</div>
 		<!-- search -->
-		<div class="hidden md:flex items-center mx-4 flex-1">
+		<div class="hidden md:flex items-center mx-2">
 			<input
 				type="text"
 				placeholder="Search here..."
-				class="px-4 py-2 w-full max-w-md border-b-2 focus:border-accent focus:outline-none"
+				class="py-2 mx-auto max-w-md border-b-2 focus:border-accent focus:outline-none"
 			/>
 		</div>
 		<!-- Dropdowns -->
-		<div class="hidden md:flex space-x-4 text-black">
-			<div class="relative group">
-				<button class="text-accent hover:text-accent">Home</button>
-				<div
-					class="absolute hidden bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
-				></div>
-			</div>
-
-			<div class="relative group">
-				<button class="hover:text-accent">Pages</button>
-				<div
-					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
-				>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>About Us</a
+		<div class="flex items-center mr-4">
+			<div class="hidden md:flex space-x-4 text-black">
+				<div class="relative group">
+					<button class="text-accent hover:text-accent">Home</button>
+					<i
+						class="fa-solid fa-chevron-down ml-2 text-xs text-accent"
+					></i>
+					<div
+						class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 					>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Services</a
-					>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>About Us</a
+						>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Services</a
+						>
+					</div>
 				</div>
-			</div>
 
-			<div class="relative group">
-				<button class="hover:text-accent">Insurance</button>
-				<div
-					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
-				>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Life</a
+				<div class="relative group">
+					<button class="hover:text-accent">Pages</button>
+					<i class="fa-solid fa-chevron-down ml-2 text-xs"></i>
+					<div
+						class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 					>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Health</a
-					>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>About Us</a
+						>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Services</a
+						>
+					</div>
 				</div>
-			</div>
 
-			<div class="relative group">
-				<button class="hover:text-accent">Blog</button>
-				<div
-					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
-				>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Latest</a
+				<div class="relative group">
+					<button class="hover:text-accent">Insurance</button>
+					<i class="fa-solid fa-chevron-down ml-2 text-xs"></i>
+					<div
+						class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 					>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Popular</a
-					>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Life</a
+						>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Health</a
+						>
+					</div>
 				</div>
-			</div>
 
-			<div class="relative group">
-				<button class="hover:text-accent">Contact Us</button>
-				<div
-					class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
-				>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Get in Touch</a
+				<div class="relative group">
+					<button class="hover:text-accent">Blog</button>
+					<i class="fa-solid fa-chevron-down ml-2 text-xs"></i>
+					<div
+						class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 					>
-					<a href="#" class="block px-4 py-2 hover:bg-gray-200"
-						>Support</a
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Latest</a
+						>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Popular</a
+						>
+					</div>
+				</div>
+
+				<div class="relative group">
+					<button class="hover:text-accent">Contact Us</button>
+					<i class="fa-solid fa-chevron-down ml-2 text-xs"></i>
+					<div
+						class="absolute hidden group-hover:block bg-white text-gray-700 py-2 mt-1 w-40 rounded shadow-lg"
 					>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Get in Touch</a
+						>
+						<a href="#" class="block px-4 py-2 hover:bg-gray-200"
+							>Support</a
+						>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -82,39 +98,28 @@
 				><img
 					src="/assets/images/icons/phone_icon.png"
 					alt="phone icon"
+					class="mb-1 mr-2 w-4"
 				/>
 				+123-456-7890</span
 			>
 
 			<button
-				class="bg-accent flex text-white px-4 py-2 rounded hover:bg-accent"
+				class="bg-accent items-center flex text-white px-4 py-2 rounded hover:bg-accent"
 			>
 				<img
 					src="/assets/images/icons/quote_icon.png"
 					alt="phone icon"
+					class="h-3 w-3 mr-2"
 				/>
 				Get a Quote
 			</button>
+
+			<img
+				src="/assets/images/icons/hamburger_icon.png"
+				alt="hamburger icon"
+				class="h-10 w-10"
+			/>
 		</div>
-
-		<button class="md:hidden text-white">
-			<svg
-				class="w-6 h-6"
-				fill="none"
-				stroke="currentColor"
-				viewBox="0 0 24 24"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M4 6h16M4 12h16M4 18h16"
-				></path>
-			</svg>
-		</button>
-
-		<img src="/assets/images/icons/hamburger_icon.png" alt="" />
 	</div>
 	<!-- mobile -->
 	<div class="md:hidden bg-gray-700 mt-2 p-4">
