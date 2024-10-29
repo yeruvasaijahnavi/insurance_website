@@ -9,22 +9,24 @@ import { WhychooseusComponent } from "./whychooseus/whychooseus.component";
 import { ExpertteamComponent } from "./expertteam/expertteam.component";
 import { OurreviewComponent } from "./ourreview/ourreview.component";
 import { BlogandnewsComponent } from "./blogandnews/blogandnews.component";
+import { GetstartedComponent } from "./getstarted/getstarted.component";
 
 @Component({
 	selector: "app-root",
 	standalone: true,
 	imports: [
-		RouterOutlet,
-		HeaderComponent,
-		HeroComponent,
-		OurfeaturesComponent,
-		AboutincepComponent,
-		InsuranceServicesComponent,
-		WhychooseusComponent,
-		ExpertteamComponent,
-		OurreviewComponent,
-		BlogandnewsComponent,
-	],
+    RouterOutlet,
+    HeaderComponent,
+    HeroComponent,
+    OurfeaturesComponent,
+    AboutincepComponent,
+    InsuranceServicesComponent,
+    WhychooseusComponent,
+    ExpertteamComponent,
+    OurreviewComponent,
+    BlogandnewsComponent,
+    GetstartedComponent
+],
 	templateUrl: "./app.component.html",
 	styleUrl: "./app.component.css",
 })
