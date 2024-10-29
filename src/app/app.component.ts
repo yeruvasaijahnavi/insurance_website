@@ -8,6 +8,7 @@ import { InsuranceServicesComponent } from "./insurance-services/insurance-servi
 import { WhychooseusComponent } from "./whychooseus/whychooseus.component";
 import { ExpertteamComponent } from "./expertteam/expertteam.component";
 import { OurreviewComponent } from "./ourreview/ourreview.component";
+import { BlogandnewsComponent } from "./blogandnews/blogandnews.component";
 
 @Component({
 	selector: "app-root",
@@ -22,6 +23,7 @@ import { OurreviewComponent } from "./ourreview/ourreview.component";
 		WhychooseusComponent,
 		ExpertteamComponent,
 		OurreviewComponent,
+		BlogandnewsComponent,
 	],
 	templateUrl: "./app.component.html",
 	styleUrl: "./app.component.css",
