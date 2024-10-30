@@ -1,4 +1,4 @@
-<nav class="bg-white py-4 shadow-lg text-sm">
+<nav class="bg-white py-4 shadow-lg text-sm relative">
 	<div class="container mx-auto flex items-center justify-between px-10">
 		<div class="flex items-between">
 			<h1 class="text-accent text-3xl font-semibold mr-4" href="#">
@@ -118,7 +118,7 @@
 			</button>
 
 			<img
-				src="/assets/images/icons/hamburger_icon.png"
+				[src]="'/assets/images/icons/' + menuIcon"
 				alt="hamburger icon"
 				class="h-10 w-10 xl:hidden cursor-pointer"
 				(click)="toggleMenu()"
@@ -126,7 +126,10 @@
 		</div>
 	</div>
 	<!-- mobile -->
-	<div class="hidden bg-white mt-2 p-4 text-center">
+	<div
+		class="bg-white/80 absolute mt-2 z-50 w-full xl:hidden p-4 pr-32 text-right"
+		[ngClass]="{ hidden: !isMenuOpen }"
+	>
 		<a href="#" class="block py-2 hover:text-accent">Home</a>
 		<a href="#" class="block py-2 hover:text-accent">Pages</a>
 		<a href="#" class="block py-2 hover:text-accent">Insurance</a>
@@ -135,7 +138,7 @@
 		<input
 			type="text"
 			placeholder="Search here..."
-			class="py-2 w-2/3 border-b-2 focus:border-accent focus:outline-none"
+			class="md:hidden py-2 w-2/3 border-b-2 focus:border-accent focus:outline-none text-right"
 		/>
 	</div>
 </nav>

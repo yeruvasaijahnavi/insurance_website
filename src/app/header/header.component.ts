@@ -1,14 +1,20 @@
 import { Component } from "@angular/core";
-
+import { CommonModule } from "@angular/common";
 @Component({
 	selector: "app-header",
 	standalone: true,
-	imports: [],
+	imports: [CommonModule],
 	templateUrl: "./header.component.html",
 	styleUrl: "./header.component.css",
 })
 export class HeaderComponent {
+	isMenuOpen = false;
+	menuIcon = "hamburger_icon.png";
+
 	toggleMenu() {
-		alert("Menu Toggled");
+		this.isMenuOpen = !this.isMenuOpen;
+		this.menuIcon = this.isMenuOpen
+			? "close_icon.png"
+			: "hamburger_icon.png";
 	}
 }
