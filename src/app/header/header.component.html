@@ -1,19 +1,22 @@
 <nav class="bg-white py-4 shadow-lg text-sm">
-	<div class="container mx-auto flex items-center justify-between">
-		<div class="text-accent text-3xl font-semibold">
-			<h1 href="#">Logo</h1>
-		</div>
-		<!-- search -->
-		<div class="hidden md:flex items-center mx-2">
-			<input
-				type="text"
-				placeholder="Search here..."
-				class="py-2 mx-auto max-w-md border-b-2 focus:border-accent focus:outline-none"
-			/>
+	<div class="container mx-auto flex items-center justify-between px-10">
+		<div class="flex items-between">
+			<h1 class="text-accent text-3xl font-semibold mr-4" href="#">
+				Logo
+			</h1>
+
+			<!-- search -->
+			<div class="hidden md:flex mx-2">
+				<input
+					type="text"
+					placeholder="Search here..."
+					class="py-2 mx-auto max-w-xl border-b-2 focus:border-accent focus:outline-none"
+				/>
+			</div>
 		</div>
 		<!-- dropdowns -->
 		<div class="flex items-center mr-4">
-			<div class="hidden md:flex space-x-4 text-black">
+			<div class="hidden xl:flex space-x-4 text-black">
 				<div class="relative group">
 					<button class="text-accent hover:text-accent">Home</button>
 					<i
@@ -93,7 +96,7 @@
 			</div>
 		</div>
 
-		<div class="hidden md:flex items-center space-x-4">
+		<div class="flex items-center space-x-4">
 			<span class="flex items-center"
 				><img
 					src="/assets/images/icons/phone_icon.png"
@@ -117,35 +120,22 @@
 			<img
 				src="/assets/images/icons/hamburger_icon.png"
 				alt="hamburger icon"
-				class="h-10 w-10"
+				class="h-10 w-10 xl:hidden cursor-pointer"
+				(click)="toggleMenu()"
 			/>
 		</div>
 	</div>
 	<!-- mobile -->
-	<div class="md:hidden bg-zinc-700 mt-2 p-4">
+	<div class="hidden bg-white mt-2 p-4 text-center">
+		<a href="#" class="block py-2 hover:text-accent">Home</a>
+		<a href="#" class="block py-2 hover:text-accent">Pages</a>
+		<a href="#" class="block py-2 hover:text-accent">Insurance</a>
+		<a href="#" class="block py-2 hover:text-accent">Blog</a>
+		<a href="#" class="block py-2 hover:text-accent">Contact Us</a>
 		<input
 			type="text"
-			placeholder="Search..."
-			class="w-full px-4 py-2 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+			placeholder="Search here..."
+			class="py-2 w-2/3 border-b-2 focus:border-accent focus:outline-none"
 		/>
-
-		<a href="#" class="block text-white py-2 hover:text-accent">Home</a>
-		<a href="#" class="block text-white py-2 hover:text-accent">Pages</a>
-		<a href="#" class="block text-white py-2 hover:text-accent"
-			>Insurance</a
-		>
-		<a href="#" class="block text-white py-2 hover:text-accent">Blog</a>
-		<a href="#" class="block text-white py-2 hover:text-accent"
-			>Contact Us</a
-		>
-
-		<div class="mt-4 flex flex-col items-start">
-			<span class="text-white"> +123-456-7890</span>
-			<button
-				class="bg-accent text-white px-4 py-2 mt-2 rounded hover:bg-accent"
-			>
-				Get Demo
-			</button>
-		</div>
 	</div>
 </nav>
